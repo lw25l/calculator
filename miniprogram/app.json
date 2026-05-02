@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/admin/admin"
+  ],
+  "window": {
+    "navigationBarTitleText": "智慧景区AI导游",
+    "navigationBarBackgroundColor": "#0d9488",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f8fafc"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,26 @@
+<view style="padding:24rpx;">
+  <view class="card">
+    <view class="title">管理后台</view>
+    <view class="subtle">知识库、数字人形象、游客情感分析与数据看板</view>
+  </view>
+
+  <view class="card">
+    <view style="font-weight:600;">知识库管理</view>
+    <textarea placeholder="粘贴景区讲解词/FAQ（演示仅本地保存）" value="{{kbText}}" bindinput="onKbInput" />
+    <button style="margin-top:12rpx;" bindtap="saveKb">保存知识库</button>
+  </view>
+
+  <view class="card">
+    <view style="font-weight:600;">游客感受度报告</view>
+    <input placeholder="输入游客反馈，如：讲解很贴心" value="{{feedback}}" bindinput="onFeedback" />
+    <button class="btn-primary" style="margin-top:12rpx;" bindtap="analyze">分析情感</button>
+    <view wx:if="{{report}}" style="margin-top:12rpx;">结果：{{report.label}}（置信度 {{report.score}}）</view>
+  </view>
+
+  <view class="card">
+    <view style="font-weight:600;">数据大屏概览（示例）</view>
+    <view>当日服务人次：{{dashboard.todayUsers}}</view>
+    <view>热门问题：{{dashboard.hotQuestion}}</view>
+    <view>满意度趋势：{{dashboard.satisfaction}}</view>
+  </view>
+</view>
