@@ -1,0 +1,5 @@
+page { background: #f8fafc; color: #0f172a; font-size: 28rpx; }
+.card { background: #fff; border-radius: 20rpx; padding: 24rpx; margin-bottom: 20rpx; box-shadow: 0 8rpx 20rpx rgba(15, 23, 42, 0.06); }
+.title { font-size: 36rpx; font-weight: 600; margin-bottom: 16rpx; }
+.subtle { color: #64748b; }
+.btn-primary { background: linear-gradient(120deg,#0d9488,#0ea5e9); color:#fff; border-radius: 12rpx; }

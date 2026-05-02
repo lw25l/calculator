@@ -1,0 +1,20 @@
+<view style="padding:24rpx;">
+  <view class="card">
+    <view class="title" style="font-size:32rpx;">数字人在线讲解</view>
+    <view>形象：{{avatarStyle}} ｜ 音色：{{voice}}</view>
+    <view class="subtle">（演示版）支持文本输入；语音输入可接入微信同声传译插件/ASR SDK</view>
+  </view>
+
+  <view class="card" style="height: 680rpx; overflow-y: auto;">
+    <block wx:for="{{messages}}" wx:key="id">
+      <view style="margin-bottom: 16rpx;">
+        <view><text>{{item.role}}：</text>{{item.content}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="card">
+    <input placeholder="请输入关于景区的问题，如：开放时间" value="{{inputValue}}" bindinput="onInput" />
+    <button class="btn-primary" style="margin-top: 12rpx;" bindtap="sendMessage">发送</button>
+  </view>
+</view>

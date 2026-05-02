@@ -1,0 +1,23 @@
+<view style="padding: 24rpx;">
+  <view class="card">
+    <view class="title">AI数字人导游</view>
+    <view class="subtle">7x24小时多模态导览（语音/文本/表情）</view>
+  </view>
+
+  <view class="card">
+    <view>请选择兴趣偏好：</view>
+    <picker mode="selector" range="{{interests}}" bindchange="onInterestChange">
+      <view style="margin-top: 12rpx;">当前：{{selectedInterest}}</view>
+    </picker>
+    <button class="btn-primary" style="margin-top: 18rpx;" bindtap="goChat">开始智能讲解</button>
+  </view>
+
+  <view class="card">
+    <view class="title" style="font-size: 32rpx;">个性化路线推荐</view>
+    <block wx:for="{{route}}" wx:key="*this">
+      <view style="margin: 8rpx 0;">• {{item}}</view>
+    </block>
+  </view>
+
+  <button bindtap="goAdmin">进入管理后台（示例）</button>
+</view>

@@ -1,0 +1,2 @@
+textarea,input { width: 100%; min-height: 120rpx; background:#f1f5f9; border-radius:12rpx; padding:16rpx; box-sizing:border-box; }
+input{ min-height:auto; }
